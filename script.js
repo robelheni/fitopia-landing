@@ -10,8 +10,11 @@ function joinWaitlist(source){
         return;
     }
 
-    emails.push({email: email, source: source, time: new Date() });
-    console.log('waitlist signups so far:', emails);
+    fetch('https://formspree.io/f/f/xzdwdowv', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: email, source: source })
+    });
 
 
     if(source==='hero') {
