@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitopia - Ethiopian Fitness, Redefined</title>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class = "nav-logo"> Fit<span>opia</span></div>
+        <a href = "#waitlist" class = "nav-cta"> Join waiting list</a>
+    </nav>
+
+
+    <!-- HERO-->
+    <section class = "hero">
+        <div class = "hero-badge">Coming soon - be first to know</div>
+        <h1 class = "hero-title">Fitness made simple,<br><em>finally</em> in Amharic.</h1>
+        <p class="hero-sub">The first fitness app built for the Ethiopians anywhere in the world. Personalised workouts, meal plans, and a community - all in our language.</p>
+        <div class = "waitlist-form" id = "hero-form">
+            <input type ="email" placeholder = "Enter your email" id = "hero-email">
+            <button onclick = "joinWaitlist('hero')">Join waitlist</button>
+        </div>
+
+        <div class="success-msg" id="hero-success">
+            ✓ You're on the list — we'll be in touch soon.
+        </div>
+        <p class = "hero-note"> Free to join. No spam. Ever.</p>
+
+    </section>
+
+
+    <!-- FEATURES -->
+        <section class="features">
+            <p class="section-label">What we're building</p>
+            <h2 class="section-title">Everything you need.<br>All in Amharic.</h2>
+        
+            <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <div class="feature-name">Personalised workout plans</div>
+                <div class="feature-desc">Tell us your goals and your equipment. Fitopia creates the perfect plan for your situation. No equipment? We have you covered too.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🍽</div>
+                <div class="feature-name">Ethiopian meal planning</div>
+                <div class="feature-desc">Injera, shiro, tibs, lentils — real Ethiopian food, optimised for your fitness goals. No more generic Western meal plans.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌙</div>
+                <div class="feature-name">Fasting-aware training</div>
+                <div class="feature-desc">The only fitness platform that adapts your workouts and nutrition around your fasting schedule automatically.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📹</div>
+                <div class="feature-name">Video-guided exercises</div>
+                <div class="feature-desc">Every exercise comes with a demonstration video and Amharic voiceover. No guessing, no confusion.</div>
+            </div>
+            <div class="feature-card gold">
+                <div class="feature-icon">👥</div>
+                <div class="feature-name">community</div>
+                <div class="feature-desc">Connect with Ethiopians and Eritreans across the UK, US, Europe and beyond. Share your progress and wins — in Amharic.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📞</div>
+                <div class="feature-name">Book a trainer</div>
+                <div class="feature-desc">1-on-1 sessions with Ethiopian trainers who understand our culture, our lifestyle, and our goals.</div>
+            </div>
+            
+            </div>
+        </section>
+
+    <!-- FASTING -->
+    <section class="fasting-section">
+        <div class="fasting-text">
+        <p class="section-label">Built around your culture</p>
+        <h2>The only app that understands your fasting.</h2>
+        <p>Set your fasting schedule once. Every workout, every meal plan, every recommendation — adapted automatically around it.</p>
+        <p>Whether you fast weekly or seasonally, Fitopia keeps you on track without losing your progress.</p>
+        </div>
+        <div class="fasting-card">
+        <div class="fasting-card-title">Fasting intelligence</div>
+        <h3>Adapts to how<br>you actually live.</h3>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Fasting day workouts</div>
+            <div class="fasting-item-sub">Lower intensity, energy preserving, still effective</div>
+            </div>
+        </div>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Fasting-compatible meal plans</div>
+            <div class="fasting-item-sub">Plant-based Ethiopian meals on fasting days</div>
+            </div>
+        </div>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Muscle preservation</div>
+            <div class="fasting-item-sub">Smart plans ensure you don't lose gains while fasting</div>
+            </div>
+        </div>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Post-fast recovery</div>
+            <div class="fasting-item-sub">Smart nutrition guidance when breaking the fast</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- HOME WORKOUT SECTION -->
+    <section class="home-section">
+        <div class="home-text">
+        <p class="section-label">Built for your life</p>
+        <h2>No time? No gym?<br>No problem.</h2>
+        <p>Life gets busy. That doesn't mean your fitness has to suffer. Our home workouts are designed to be just as effective as a gym session.</p>
+        <p>All you need is yourself and whatever space you have available.</p>
+        </div>
+        <div class="fasting-card">
+        <div class="fasting-card-title">Home workout intelligence</div>
+        <h3>As effective as<br>the gym.</h3>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Dumbbell workouts</div>
+            <div class="fasting-item-sub">Full programmes with just a pair of dumbbells</div>
+            </div>
+        </div>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Bodyweight only</div>
+            <div class="fasting-item-sub">No equipment needed — just your own bodyweight</div>
+            </div>
+        </div>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">30 minute sessions</div>
+            <div class="fasting-item-sub">Effective workouts designed for busy schedules</div>
+            </div>
+        </div>
+        <div class="fasting-item">
+            <div class="fasting-dot"></div>
+            <div>
+            <div class="fasting-item-text">Video guided</div>
+            <div class="fasting-item-sub">Every exercise demonstrated in Amharic</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section" id="waitlist">
+        <h2>Your fitness journey,<br><em>in your language.</em></h2>
+        <p>Be the first to know when Fitopia launches.</p>
+        <div class="cta-form" id="cta-form-wrap">
+        <input type="email" placeholder="your@email.com" id="cta-email">
+        <button onclick="joinWaitlist('cta')">Join waitlist</button>
+        </div>
+        <div class="success-msg" id="cta-success">
+        ✓ You're on the list — we'll be in touch soon.
+        </div>
+        <p class="cta-note">Free to join. No spam. Cancel anytime.</p>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Fit<span>opia</span></div>
+        <p>© 2026 Fitopia. Coming soon.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+        
+        
+
+    
+</body>
+</html>
