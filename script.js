@@ -10,7 +10,7 @@ function joinWaitlist(source){
         return;
     }
 
-    fetch('https://formspree.io/f/f/xzdwdowv', {
+    fetch('https://formspree.io/f/xzdwdowv', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: email, source: source })
